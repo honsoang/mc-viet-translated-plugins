@@ -1,56 +1,44 @@
-prefix: '&b&lUltimateHomes&8:'
+prefix: '&b&lNhà&8: '
 command:
-  noPermission: '&cYou don''t have permission to do that.'
+  noPermission: '&cBạn không thể sử dụng lệnh đó.'
   reloaded: '&aUltimateHomes reloaded successfully!'
   sethome:
-    usage: '&fInvalid usage! Use &3/sethome <name>'
-    invalidSender: '&cYou have to be a player to set a home.'
-    createdHome: '&fSet your home to your current location.'
-    createdNamedHome: '&fCreated a home named &3%arg1&f at your current location.'
-    noMoreHomes: '&fYou can''t set any more homes. Use /delhome <name> to remove a
-      home. (Limit: &3%arg1&f)'
-    nameAlreadyExists: '&fYou already have a home with the name &3%arg1&f! Try again
-      with a different name.'
-    nonAlphanumeric: '&fYour home name must be alphanumeric; try again with the name
-      &3%arg2 &for choose a different one.'
-    nonAlphanumericNoSuggestion: '&fYour home name must be alphanumeric; please choose
-      a different name.'
-    unsafeLocation: '&cYou can''t set a home here because it''s unsafe!'
+    usage: '&fNhập sai cú pháp! Hãy dùng &3/sethome <tên muốn đặt>'
+    invalidSender: '&cNgười chơi không hợp lệ'
+    createdHome: '&fĐã set nhà tại vị trí bạn đang đứng'
+    createdNamedHome: '&fĐã set nhà mang tên &3%arg1&f vị trí bạn đang đứng'
+    noMoreHomes: '&fBạn không thể set thêm home nữa. Dùng /delhome <tên cần xoá> để xoá nhà không dùng tới. (Limit: &3%arg1&f)'
+    nameAlreadyExists: '&fBạn đã set một nhà trùng tên với &3%arg1&f! Vui lòng thử lại với tên khác.'
+    nonAlphanumeric: '&fTên nhà không hợp lệ; vui lòng tạo tên khác'
+    nonAlphanumericNoSuggestion: '&fTên nhà không hợp lệ; vui lòng tạo tên khác'
+    unsafeLocation: '&cBạn không thể set nhà tại đây vì nó không an toàn!'
   home:
-    usage: '&fInvalid usage! Use &3/home <name>'
-    invalidSender: '&cYou have to be a player to teleport to a home.'
-    invalidHome: '&fYou don''t have a home named &3%arg1&f. Type &3/homes&f to see
-      your homes.'
-    teleportedHome: '&fTeleported home. (&bx&3%arg3&f, &by&3%arg4&f, &bz&3%arg5&f,
-      &fin &3%arg2&f)'
-    teleportedHomeNamed: '&fTeleported to home &3%arg1&f. (&bx&3%arg3&f, &by&3%arg4&f,
-      &bz&3%arg5&f, &fin &3%arg2&f)'
-    teleportedOther: '&fTeleported to &3%arg6&f''s home &3%arg1&f. (&bx&3%arg3&f,
-      &by&3%arg4&f, &bz&3%arg5&f, &fin &3%arg2&f)'
-    invalidHomeOther: '&3%arg2&f doesn''t have a home named &3%arg1&f. Type &3/homes
-      %arg2&f to see their homes.'
-    unknownPlayer: '&fUnknown player &3%arg1&f.'
-    warmup: '&fTeleporting in &3%arg1 &fseconds. Remain still...'
-    teleportationCancelled: '&cYou moved! Teleportation cancelled.'
-    unsafeTeleport: '&cWarning: the destination location is unsafe! To confirm you
-      want to teleport, quickly run the command again.'
+    usage: '&fSai cú pháp! Hãy dùng &3/home <tên nhà>'
+    invalidSender: '&cNgười chơi không hợp lệ'
+    invalidHome: '&fBạn không có nhà nào mang tên &3%arg1&f. Hãy dùng lệnh &3/homes&f để xem danh sách nhà'
+    teleportedHome: '&fĐã teleport về nhà, home sweet home.'
+    teleportedHomeNamed: '&fĐã teleport về nhà &3"%arg1"&f.'
+    teleportedOther: '&fĐã teleport đến nhà của &3%arg6&f'
+    invalidHomeOther: '&3%arg2&f không có sở hữu nhà &3"%arg1"&f.'
+    unknownPlayer: '&fNgười chơi không hợp lệ &3%arg1&f.'
+    warmup: '&fSẽ teleport trong &3%arg1 &fgiây tới. Đứng im nhé...'
+    teleportationCancelled: '&cBạn đã di chuyển! Đã ngừng teleport'
+    unsafeTeleport: '&cCảnh báo: khu vực bạn chuẩn bị teleport không an toàn!'
   homes:
-    usage: '&fInvalid usage! Use &3/homes <player>'
-    invalidSender: '&cYou have to be a player to see homes.'
-    unknownPlayer: '&fUnknown player &3%arg1&f.'
-    homes: '&fHomes &8(&f%arg1&8) &f- %arg2'
-    homesOther: '&3%arg1&f''s homes &8(&f%arg2&8)&f: %arg3'
+    usage: '&fNhập sai cú pháp! Hãy dùng &3/homes'
+    invalidSender: '&cNgười chơi không hợp lệ'
+    unknownPlayer: '&fNgười chơi &3%arg1&f không hợp lệ.'
+    homes: '&fDanh sách nhà &8(&f%arg1&8) &f- %arg2'
+    homesOther: 'Danh sách nhà của &3%arg1&f &8(&f%arg2&8)&f: %arg3'
     homeListSeparator: '&f, '
     homeListColor: '&3'
-    noHomes: '&fYou don''t have any homes set! Set one with &3/sethome <name>'
-    noHomesOther: '&3%arg1&f doesn''t have any homes set.'
+    noHomes: '&fBạn không có set nhà nào cả! Hãy dùng lệnh &3/sethome <name> để tạo một home/nhà'
+    noHomesOther: '&3%arg1&f không có sở hữu home/nhà nào cả'
   delhome:
-    usage: '&fInvalid usage! Use &3/delhome [player] <name>'
-    invalidHome: '&fYou don''t have a home named &3%arg1&f. Type &3/homes&f to see
-      your homes.'
-    invalidHomeOther: '&3%arg2&f doesn''t have a home named &3%arg1&f. Type &3/homes
-      %arg2&f to see their homes.'
-    deleted: '&fYour home &3%arg1 &fwas deleted.'
-    deletedOther: '&3%arg2&f''s home &3%arg1 &fwas deleted.'
-    unknownPlayer: '&fUnknown player &3%arg1&f.'
-    invalidSender: '&cYou have to be a player to delete a home.'
+    usage: '&fSai cú pháp! Hãy dùng &3/delhome <tên nhà cần xoá>'
+    invalidHome: '&fBạn không có nhà nào mang tên &3%arg1&f. Hãy dùng lệnh &3/homes&f để xem danh sách nhà'
+    invalidHomeOther: '&3%arg2&f không có nhà nào mang tên &3%arg1&f cả.'
+    deleted: '&fNhà &3%arg1 &fcủa bạn đã bị xoá'
+    deletedOther: 'Nhà của &3%arg2&f &3%arg1 &fđã bị xoá'
+    unknownPlayer: '&fNgười chơi &3%arg1&f không hợp lệ'
+    invalidSender: '&cNgười chơi không hợp lệ'
