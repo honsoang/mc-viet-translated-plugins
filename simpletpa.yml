@@ -5,7 +5,7 @@
 # |____/  |_| |_| |_| |_| | .__/  |_|  \___|   |_|   | .__/   \__,_|
 #                         |_|                        |_|
 
-# PlaceHolders: %time% | %player% | %option%
+# Place Holders: %time% | %player% | %option%
 
 
 # !!!!!!!!!!!!!!!!
@@ -17,102 +17,85 @@ enable-teleport-logging: true
 #If you set it to true, you will disable the prefix
 #Make sure to restart the server in order to apply it
 disable-prefix: false
-prefix: "&c[&6thuyson's tpa beta&c]"
+prefix: "&c[&6thuyson's tpa&c]"
 
 #Messages:
-# To use HEX COLOR CODES - EXAMPLE: #2ecc71
-# Death-Message: "&6To teleport to your death #2ecc71location use &c/back"
-
 # TO DISABLE A MESSAGE - SET IT TO - NONE
 # EXAMPLE:
 # Console-Isnt-Player: "none"
 Console-Isnt-Player: "&6Console can't use &cSimpleTpa&6!"
 Disabled-World-Message: "&6You can't use &cSimpleTpa &6in this World!"
-Teleport-Message: "&6You will be teleported in &c%time% &6seconds!"
-Teleport-Message-TPAUTO: "&6You will be teleported in &c%time% &6seconds! Don't move!"
-Teleport-Message-Back-To-Player: "&6You &caccepted &6the teleport request!"
-Player-Is-Null: "&6The player is not &conline&6!"
-Player-Doesnt-Have-Back-Point: "&6The player doesn't have any back locations!"
-Player-Doesnt-Have-Back-Point-1: "&6You don't have any back locations!"
-Cooldown-Message: "&6You can't use that command for %time% seconds yet!"
-Death-Message: "&6To teleport to your death location use &c/back"
+Teleport-Message: "&6Bạn sẽ được dịch chuyển trong &c%time% &6giây!"
+Teleport-Message-Back-To-Player: "&6Bạn đã &cchấp nhận &6yêu cầu dịch chuyển!"
+Player-Is-Null: "&6Người chơi này không có &ctrong server&6!"
+Player-Doesnt-Have-Back-Point: "&6Người chơi này không thể quay trở lại vị trí ban đầu."
+Player-Doesnt-Have-Back-Point-1: "&6Bạn không thể quay trở lại vị trí ban đầu."
+Cooldown-Message: "&6Bạn không thể dùng lệnh này, sử dụng sau %time% giây."
+Death-Message: "&6Quay lại vị trí chết, nhập lệnh &c/back"
 Teleport-Message-Back-To-Sender-TPHEREALL: "&6Sending a teleport here request to &ceveryone&6!"
-No-Permission-Message: "&6You don't have permission for this command!"
-TpaToggle-Deactivated-Player-2: "&c%player% &6disabled the teleportation to you!"
-TpaToggle-Activated-Player-2: "&c%player% &6enabled the teleportation to you!"
-TpaToggle-Deactivated-Player: "&6You &cdisabled&6 the teleportation for &c%player%&6."
-TpaToggle-Activated-Player: "&6You &cenabled&6 the teleportation for &c%player%&6."
-TpaToggle-Deactivated: "&6You &cdisabled&6 the teleportation to you."
-TpaToggle-Activated: "&6You &cenabled&6 the teleportation to you."
-TpaToggled-Player-Message: "&6The player has &cdisabled &6the teleportation to him!"
-Player-Is-Player: "&6You can't teleport to &cyourself&6!"
-Player-Is-Player-tpignore: "&6You can't ignore &cyourself&6!"
-Player-Is-Ignored: "&6The player has been &cignored&6!"
-Player-Is-Already-Ignored: "&6The player was &cunblocked&6! If you want to block him, use the command again!"
-Already-A-TP-Request: "&6You already have &csent &6a teleport request! If you want to cancel it &c/tpcancel player "
-Tpa-Usage-Message: "&6Please use: &c/tpa (player)"
-TpaIgnore-Usage-Message: "&6Please use: &c/tpaignore (player)"
-Timed-Out-Message: "&6Your &cteleport request&6 has timed out!"
-Sending-Teleport-Request: "&6Sending a teleport request to &c%player%&6. If you want to cancel it &c/tpcancel player "
-Accept-Message: "&6To accept the teleport request, type &c/tpaccept"
-Deny-Message: "&6To deny the teleport request, type &c/tpdeny"
-Sent-Request-On-You: "&c%player% &6has sent you a teleport request!"
-Timed-Out-Here-Message: "&6Your teleport here request has &ctimed out!"
-Sending-Teleport-Here-Request: "&6Sending a teleport here request to &c%player%&6. If you want to cancel it &c/tpcancel player"
-Sent-Here-Request-On-You: "&c%player% &6has sent you a teleport here request!"
-Already-A-TPHere-Request: "&6You already have &csent &6a teleport here request! If you want to cancel it &c/tpcancel player"
-Tpa-Here-Usage-Message: "&6Please use: &c/tpahere (player)"
-No-Teleport-Requests: "&6You don't have any teleport requests!"
-Invalid-Player: "&6It seems the player who was teleporting to you has left the server!"
-Teleport-Message-Back-To-Sender: "&c%player% &6has accepted your teleportation request."
-Teleported-Message: "&6Teleported!"
-#for Teleported-Message-TpAuto  %player% placeholder for player name
-Teleported-Message-TpAuto: "&c%player% &6has teleported to you! You have the /tpauto features turned on!"
-Move-Cancel-Message: "&6You have moved and the teleport request has been removed!"
-Rejected-Sender: "&6The player has rejected your &crequest&6!"
-Rejected-Message: "&6You have rejected the &crequest&6!"
+No-Permission-Message: "&6Bạn không thể sử dụng lệnh này!"
+TpaToggle-Deactivated-Player-2: "&c%player% &6đã tắt dịch chuyển đến bạn!"
+TpaToggle-Activated-Player-2: "&c%player% &6đã bật dịch chuyển đến bạn!"
+TpaToggle-Deactivated-Player: "&6Bạn đã &ctắt&6 dịch chuyển tới &c%player%&6."
+TpaToggle-Activated-Player: "&6Bạn đã &cbật&6 dịch chuyển tới &c%player%&6."
+TpaToggle-Deactivated: "&6&cKHÔNG AI&6 giờ đây có thể dịch chuyển tới bạn."
+TpaToggle-Activated: "&6Giờ đây ai &cCŨNG&6 có thể dịch chuyển tới bạn."
+TpaToggled-Player-Message: "&6Người chơi này &cđã tắt &6 quyền dịch chuyển tới họ!"
+Player-Is-Player: "&6Bạn bị &cđao&6 à?"
+Already-A-TP-Request: "&6Bạn đã gửi &csẵn &6a một yêu cầu dịch chuyển! Dùng lệnh &c/tpcancel <tên người chơi>&6 để hủy yêu cầu. "
+Tpa-Usage-Message: "&6Vui lòng dùng lệnh: &c/tpa (tên người chơi)"
+Timed-Out-Message: "&6Đã &chết thời gian&6 yêu cầu dịch chuyển!"
+Sending-Teleport-Request: "&6Đã gửi một yêu cầu đến &c%player%&6. Dùng lệnh &c/tpcancel <tên người chơi>&6 để hủy yêu cầu."
+Accept-Message: "&6Để chấp nhận yêu cầu, dùng &c/tpaccept"
+Deny-Message: "&6Để từ chối yêu cầu, dùng &c/tpaccept"
+Sent-Request-On-You: "&c%player% &6đã gửi bạn một lời mời dịch chuyển tới họ!"
+Timed-Out-Here-Message: "&6Đã &chết thời gian&6 yêu cầu dịch chuyển tới họ!"
+Sending-Teleport-Here-Request: "&6Đang gửi lời mời dịch chuyển &c%player%&6 tới bạn. Dùng lệnh &c/tpcancel <tên người chơi>&6 để hủy yêu cầu."
+Sent-Here-Request-On-You: "&c%player% &6yêu cầu bạn dịch chuyển tới họ!"
+Already-A-TPHere-Request: "&6Bạn đã gửi &csẵn &6a một yêu cầu dịch chuyển tới bạn! Dùng lệnh &c/tpcancel <tên người chơi>&6 để hủy yêu cầu."
+Tpa-Here-Usage-Message: "&6Vui lòng dùng lệnh: &c/tpahere (tên người chơi)"
+No-Teleport-Requests: "&6Bạn hiện tại không có lời mời/yêu cầu nào cả"
+Invalid-Player: "&6lỗi người chơi, Lý do: Rời server."
+Teleport-Message-Back-To-Sender: "&c%player% &6đã chấp nhận lời mời dịch chuyển."
+Teleported-Message: "&6Thành công dịch chuyển!"
+Move-Cancel-Message: "&6Yêu cầu của bạn đã bị lỗi vì bạn di chuyển, vui lòng thử lại lệnh và đứng im."
+Rejected-Sender: "&6Người chơi đã từ chối &clời mời&6!"
+Rejected-Message: "&6Bạn đã từ chối &clời mời&6!"
 Player-Is-In-Disabled-World: "&6The player you wanted to teleport to is in &cdisabled world&6!"
-Tpcancel-Usage-Message: "&6Please use: &c/tpcancel (player)"
-Error-Cancelling-Request: "&6You can't cancel your own &crequest!"
-Request-Cancelled: "&6You successfully cancelled the &cteleportation request&6!"
-Death-Message-Coords: "&6Your death location is: &c%coords%&6!"
-Time-Left: "&6You have &c%seconds% &6seconds to accept or deny the request"
-Damaged-Cancel-Message: "&6You were damaged and the teleport request has been removed!"
+Tpcancel-Usage-Message: "&6Vui lòng dùng lệnh: &c/tpcancel (tên người chơi)"
+Error-Cancelling-Request: "&6Bạn bị &cđao&6 à?"
+Request-Cancelled: "&6Bạn đã hủy bỏ &cyêu cầu&6 của bạn!"
+Death-Message-Coords: "&6Buồn ghê, bạn đã chết ở &c%coords%&6!"
+Time-Left: "&6Bạn còn &c%seconds% &6giây để chấp nhận hoặc từ chối yêu cầu"
+Damaged-Cancel-Message: "&6Yêu cầu của bạn đã bị lỗi vì bạn nhận sát thương từ ai đó, vui lòng thử lại lệnh và đứng im."
 Different-Gamemode: "&6You can't use any teleportation commands, because you are in &cSPECTATOR &6mode!"
 World-Doesnt-Exists-Or-Unloaded: "&6The world you're trying to teleport to is either unloaded or doesn't exist!"
-Enabled-TpAuto: "&6From now on you will &cautomatically accept &6all /tpa requests!"
-Disabled-TpAuto: "&6From now on you &cwon't automatically accept &6all /tpa requests!"
-Player-Has-Ignored-You: "&6The player has &cignored &6your teleportation requests!"
-Player-Not-Same-World: "&6The player you have been trying to &cteleport &6is not in the same &cworld&6!"
 ## BUTTONS
 #Here you can find the colors https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
 
 # PARTICLES AND SOUNDS
-# Here you can change the sound volume or the pitch. These are the recommended values
-# Select the name for the sound from here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+#Select the name for the sound from here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
 Sound-Name: "ENTITY_EXPERIENCE_ORB_PICKUP"
-sound-volume: 3.0
-sound-pitch: 0.533
-# Select the name for the particle from here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+#Select the name for the particle from here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
 Particle-Name: "EXPLOSION_NORMAL"
 
 #Accept Button Properties
 Accept-Button: "ACCEPT"
 Accept-Button-Color: "RED"
 Accept-Button-Set-Bold: true
-Accept-Button-Description: "&6Click here to &cACCEPT &6the tp request!"
+Accept-Button-Description: "&6Nhấp vào đấy để &cCHẤP NHẬN &6yêu cầu dịch chuyển!"
 
 #Middle Button Properties
 Middle-Button: " | "
 Middle-Button-Color: "GRAY"
 Middle-Button-Set-Bold: true
-Middle-Button-Description: "&7 <- Choose between -> "
+Middle-Button-Description: "&7 <- Chọn -> "
 
 #Deny Button Properties
 Deny-Button: "DENY"
 Deny-Button-Color: "RED"
 Deny-Button-Set-Bold: true
-Deny-Button-Description: "&6Click here to &cDENY &6the tp request!"
+Deny-Button-Description: "&6Nhấp vào đấy để &cTỪ CHỐI &6yêu cầu dịch chuyển!"
 
 # If you want to disable simpletpa for some worlds, then you can add them by adding - 'NameOfTheWorld'
 #Disabled Worlds:
@@ -145,7 +128,6 @@ disable-particles: false
 disable-move-system: false
 # If you want to disable sounds from the plugin, then set this to true
 disable-sound: false
-
 # If you want to disable interdimensional travel(only allowed to use the plugin in the same world with other player), then set this to true
 disable-interdimensional-travel: false
 # If you want to disable the invincibility after teleporting, then set this to true
@@ -170,6 +152,3 @@ tpahereall-cooldown: 10
 #The options for commands are: tpa | tpahere | back | tpahereall
 #Example: simpletpa.cooldown.tpa.300 | simpletpa.cooldown.tpahere.300 | simpletpa.cooldown.tpahereall.300 | simpletpa.cooldown.back.300
 #This will set the cooldown for tpa/ tpahere/ tpahereall / back to 300 seconds
-
-
-
